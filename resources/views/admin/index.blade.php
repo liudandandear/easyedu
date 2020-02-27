@@ -6,7 +6,7 @@
             <div class="header-info">
                 <div class="left">
                     <br>
-                    <h2 class="header-title"><strong>数据统计</strong> <small class="subtitle">Some insights and
+                    <h2 class="header-title"><strong>统计分析</strong> <small class="subtitle">Some insights and
                             statistics </small></h2>
                 </div>
                 <div class="right flex-middle d-none d-md-block">

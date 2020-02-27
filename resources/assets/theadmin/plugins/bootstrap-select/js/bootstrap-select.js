@@ -174,7 +174,7 @@
                         bubbles: true
                     });
                 } else {
-                    // For IE since it doesn't support Event constructor
+                    // For IE since it doesn't support AdminLoginSuccessEvent constructor
                     event = document.createEvent('Event');
                     event.initEvent(eventName, true, false);
                 }

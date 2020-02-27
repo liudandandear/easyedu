@@ -1,4 +1,3 @@
-<!-- Topbar -->
 <header class="topbar topbar-expand-lg topbar-secondary topbar-inverse">
     <div class="container">
         <div class="topbar-left">
@@ -15,7 +14,7 @@
 
                     <li class="menu-item">
                         <a class="menu-link" href="{{route('admin.index.index')}}">
-                            <span class="title">主页</span>
+                            <span class="title">面板</span>
                         </a>
                     </li>
 
@@ -49,28 +48,24 @@
 
 
         <div class="topbar-right">
-
             <ul class="topbar-btns">
                 <li class="dropdown">
                     <span class="topbar-btn" data-toggle="dropdown"><img class="avatar"
                                                                          src="{{ asset('img/avatar/1.jpg') }}"
                                                                          alt="..."></span>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a class="dropdown-item" href="#"><i class="ti-user"></i> Profile</a>
-                        <a class="dropdown-item" href="#"><i class="ti-settings"></i> Settings</a>
+                        <a class="dropdown-item" href="#"><i class="ti-user"></i> 修改密码</a>
+                        <a class="dropdown-item" href="#"><i class="ti-settings"></i> 设置</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#"><i class="ti-power-off"></i> Logout</a>
+                        <a class="dropdown-item" href="{{ route('admin.logout') }}"><i class="ti-power-off"></i>
+                            安全退出</a>
                     </div>
                 </li>
-
-
                 <li>
                     <span class="topbar-btn has-new" data-toggle="quickview" data-target="#qv-notifications"><i
                                 class="ti-bell"></i></span>
                 </li>
-
             </ul>
-
         </div>
     </div>
 </header>

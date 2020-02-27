@@ -5,7 +5,7 @@
             <div class="header-info">
                 <div class="left">
                     <br>
-                    <h2 class="header-title"><strong>视频</strong> <small class="subtitle">List of all your tickets are available in this page.</small></h2>
+                    <h2 class="header-title"><strong>系统设置</strong> <small class="subtitle">List of all your tickets are available in this page.</small></h2>
                 </div>
             </div>
 
