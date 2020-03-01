@@ -11,24 +11,7 @@ class LoginController extends Controller
     protected $guard = 'admin';
 
     /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware(
-            'check.admin.status',
-            [
-                'except' => [
-                    'login', 'loginRequest',
-                ],
-            ]
-        );
-    }
-
-    /**
-     * 用户登录
+     * 用户登录视图路由
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function login()
@@ -37,7 +20,7 @@ class LoginController extends Controller
     }
 
     /**
-     * 用户退出
+     * 用户退出请求路由
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
      */
     public function logout()
@@ -48,7 +31,7 @@ class LoginController extends Controller
     }
 
     /**
-     * 用户登录请求
+     * 用户登录请求路由
      * @link 教程 https://blog.csdn.net/MShow006/article/details/81585234
      * @param LoginRequest $request
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector
@@ -66,7 +49,7 @@ class LoginController extends Controller
     }
 
     /**
-     * 用户注册
+     * 用户注册视图路由
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function register()

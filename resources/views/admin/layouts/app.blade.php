@@ -25,6 +25,7 @@
 <script src="{{ asset('js/core.min.js') }}"></script>
 <script src="{{ asset('js/app.min.js') }}"></script>
 <script src="{{ asset('js/script.js') }}"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
 <script crossorigin="anonymous" integrity="sha384-yhphg78T9x4D5MygsNWDAL6NRy6UurEwbp81HAeiKaBIh7rUi1+BIwJMlYJuPBlW"
         src="//lib.baomitu.com/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
 

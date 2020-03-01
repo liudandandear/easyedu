@@ -2,14 +2,14 @@
 
 namespace App\Http\Requests\Admin;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Http\Requests\BaseRequest;
 
 /**
  * 登录参数校验
  * Class LoginRequest
  * @package App\Http\Requests\Admin
  */
-class LoginRequest extends FormRequest
+class LoginRequest extends BaseRequest
 {
     /**
      * Determine if the user is authorized to make this request.

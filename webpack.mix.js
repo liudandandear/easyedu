@@ -23,4 +23,5 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .copyDirectory('resources/assets/theadmin/plugins/jquery-minicolors', 'public/vendor/jquery-minicolors')
     .copyDirectory('resources/assets/theadmin/plugins/bootstrap-select', 'public/vendor/bootstrap-select')
     .copyDirectory('resources/assets/sweetalert2', 'public/vendor/sweetalert2')
+    .copy('resources/assets/js/custom.js', 'public/js/custom.js')
 ;

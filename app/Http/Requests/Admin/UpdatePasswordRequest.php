@@ -2,14 +2,14 @@
 
 namespace App\Http\Requests\Admin;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Http\Requests\BaseRequest;
 
 /**
  * 修改密码参数校验
  * Class UpdatePasswordRequest
  * @package App\Http\Requests\Admin
  */
-class UpdatePasswordRequest extends FormRequest
+class UpdatePasswordRequest extends BaseRequest
 {
     /**
      * Determine if the user is authorized to make this request.

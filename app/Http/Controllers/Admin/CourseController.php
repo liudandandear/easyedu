@@ -6,11 +6,10 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 
-class UserController extends Controller
+class CourseController extends Controller
 {
-
     public function index()
     {
-        return view('admin.user.index');
+        return view('admin.course.index');
     }
 }

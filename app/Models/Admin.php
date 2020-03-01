@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+/**
+ * 后台管理员
+ * Class Admin
+ * @package App\Models
+ */
 class Admin extends Authenticatable
 {
     use Notifiable;
@@ -19,6 +24,10 @@ class Admin extends Authenticatable
 
     protected $hidden = [
         'password', 'remember_token',
+    ];
+
+    protected $appends = [
+        'edit_url', 'destroy_url',
     ];
 
     /**
@@ -52,5 +61,24 @@ class Admin extends Authenticatable
             'admin_users_id',
             'role_id'
         );
+    }
+
+    /**
+     * 当前管理员是否可以删除
+     * @return bool
+     */
+    public function couldDestroy()
+    {
+        return $this->roles()->where('slug', config('meedu.administrator.super_slug'))->exists();
+    }
+
+    public function getEditUrlAttribute()
+    {
+        return route('admin.administrator.edit', $this);
+    }
+
+    public function getDestroyUrlAttribute()
+    {
+        return route('admin.administrator.destroy', $this);
     }
 }

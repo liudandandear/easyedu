@@ -24,9 +24,9 @@
                         </a>
                     </li>
 
-                    <li class="menu-item {{active_class(if_route('admin.form.index'))}}">
-                        <a class="menu-link" href="{{route('admin.form.index')}}">
-                            <span class="title">表单</span>
+                    <li class="menu-item {{active_class(if_route('admin.course.index'))}}">
+                        <a class="menu-link" href="{{route('admin.course.index')}}">
+                            <span class="title">课程</span>
                         </a>
                     </li>
 

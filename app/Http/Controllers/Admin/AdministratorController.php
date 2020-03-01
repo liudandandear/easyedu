@@ -6,7 +6,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 
-class SettingController extends Controller
+class AdministratorController extends Controller
 {
 
     public function index()
@@ -14,7 +14,15 @@ class SettingController extends Controller
         return view('admin.setting.administrator.index');
     }
 
-    public function administrator()
+    public function create()
+    {
+    }
+
+    public function edit()
+    {
+    }
+
+    public function delete()
     {
     }
 }

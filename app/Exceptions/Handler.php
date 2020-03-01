@@ -64,6 +64,7 @@ class Handler extends ExceptionHandler
             if ($request->ajax() || $request->wantsJson()) {
                 return response('Unauthorized.', 401);
             } else {
+                flash('您未登录，请登录后操作！');
                 return redirect()->guest(route('admin.login')); // 这里指定重定向后的路由
             }
         }
