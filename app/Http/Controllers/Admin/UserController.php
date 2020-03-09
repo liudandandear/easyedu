@@ -11,6 +11,9 @@ class UserController extends Controller
 
     public function index()
     {
-        return view('admin.user.index');
+        $subHeaders = [
+            "title" => "管理员"
+        ];
+        return view('admin.user.index',compact('subHeaders'));
     }
 }

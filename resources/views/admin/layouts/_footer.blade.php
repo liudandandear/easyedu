@@ -1,26 +1,15 @@
-<!-- Footer -->
-<footer class="site-footer">
+<footer id='footer'>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <p class="text-center text-sm-left">Designed using <a href="http://thetheme.io/theadmin"><strong>TheAdmin</strong></a>
-                </p>
-            </div>
-
-            <div class="col-md-6">
-                <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Help</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <ul class='breadcrumb'>
+            <li><a href='/my/'>禅道</a>
+            </li>
+            <li><a href='/my/'><span> 我的地盘</span></a>
+            </li>
+        </ul>
+        <div id='poweredBy'>
+            <small class='muted'><a href='https://api.zentao.net/goto.php?item=aiux' class='link-aiux' target='_blank'>Designed
+                    by <strong>艾体验</strong></a></small> &nbsp;
+            <a href='https://www.zentao.net' target='_blank'><i class='icon-zentao'></i> 禅道biz3.6</a> &nbsp;
         </div>
     </div>
 </footer>
-<!-- END Footer -->

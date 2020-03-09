@@ -11,7 +11,10 @@ class SettingController extends Controller
 
     public function index()
     {
-        return view('admin.setting.administrator.index');
+        $subHeaders = [
+            "title" => "权限"
+        ];
+        return view('admin.setting.administrator.index', compact('subHeaders'));
     }
 
     public function administrator()

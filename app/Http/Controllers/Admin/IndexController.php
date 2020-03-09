@@ -11,6 +11,9 @@ class IndexController extends Controller
 
     public function index()
     {
-        return view('admin.index');
+        $subHeaders = [
+            "title" => "面板"
+        ];
+        return view('admin.index', compact('subHeaders'));
     }
 }
