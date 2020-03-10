@@ -12,7 +12,7 @@ class UserController extends Controller
     public function index()
     {
         $subHeaders = [
-            "title" => "管理员"
+            "学生"
         ];
         return view('admin.user.index',compact('subHeaders'));
     }

@@ -3,8 +3,8 @@
         <div id="pageNav" class='btn-toolbar'></div>
         <nav id='subNavbar'>
             <ul class='nav nav-default'>
-                @foreach($subHeaders as $subHeader)
-                    <li class='active' data-id='index'><a href='/my/'>{{$subHeader}}</a></li>
+                @foreach($subHeaders as $key=>$header)
+                    <li class='' data-id='index'><a href='/my/'>{{$subHeaders[$key]}}</a></li>
                 @endforeach
             </ul>
         </nav>
